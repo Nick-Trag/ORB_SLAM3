@@ -49,3 +49,4 @@ cmake-build-debug/
 *.osa
 
 .idea/
+data/
