@@ -4,7 +4,7 @@ pathDatasetEuroc='/home/nikos/Downloads/'
 
 # Single Session Example (Pure visual)
 echo "Launching MH05 with Stereo sensor"
-#./Stereo/stereo_euroc ../Vocabulary/ORBvoc.txt ./Stereo/EuRoC.yaml "$pathDatasetEuroc"/MH05 ./Stereo/EuRoC_TimeStamps/MH05.txt dataset-MH05_stereo
+./Stereo/stereo_euroc ../Vocabulary/ORBvoc.txt ./Stereo/EuRoC.yaml "$pathDatasetEuroc"/MH05 ./Stereo/EuRoC_TimeStamps/MH05.txt dataset-MH05_stereo
 echo "------------------------------------"
 echo "Evaluation of MH05 trajectory with Stereo sensor"
 python2 ../evaluation/evaluate_ate_scale.py ../evaluation/Ground_truth/EuRoC_left_cam/MH05_GT.txt f_dataset-MH05_stereo.txt --plot MH05_stereo.pdf --verbose | tee MH05.txt
